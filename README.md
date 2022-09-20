@@ -224,15 +224,7 @@ React Testing Library provides a nice `debug` method to give us a sense of what
 the DOM looks like when our tests are running. Let's try this out instead:
 
 ```jsx
-// src/__tests__/Article.test.js
-test("displays the text 'please pass this test'", () => {
-  render(<Article />);
-
-  // add this line
-  screen.debug();
-
-  expect(screen.queryByText("please pass this test")).toBeInTheDocument();
-});
+ react
 ```
 
 Now when we run the tests, we'll get a nice representation of what the DOM looks
